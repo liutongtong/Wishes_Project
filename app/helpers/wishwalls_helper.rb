@@ -1,0 +1,2 @@
+module WishwallsHelper
+end

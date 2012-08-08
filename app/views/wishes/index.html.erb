@@ -1,0 +1,15 @@
+<h1 class="title" >Wish Wall</h1>
+
+
+<% @wishes.each do |wish| %>
+
+   <%= wish.mywish %>  &nbsp; &nbsp;&nbsp;
+
+<% end %>
+
+
+<br />      <br />     <br />      <br />
+
+<div class="addWish">
+<%= link_to 'New Wish', new_wish_path %>
+</div>

@@ -1,0 +1,23 @@
+<h1>Listing wishwalls</h1>
+
+<table>
+  <tr>
+    <th>Wish</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wishwalls.each do |wishwall| %>
+  <tr>
+    <td><%= wishwall.wish %></td>
+    <td><%= link_to 'Show', wishwall %></td>
+    <td><%= link_to 'Edit', edit_wishwall_path(wishwall) %></td>
+    <td><%= link_to 'Destroy', wishwall, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wishwall', new_wishwall_path %>

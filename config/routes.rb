@@ -3,6 +3,8 @@ WishWall::Application.routes.draw do
 
   resources :wishes
 
+  root to: "wishwalls#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
